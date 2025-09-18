@@ -4,17 +4,17 @@ import "./Footer.css";
 const Footer = () => {
   const boxes = [
     {
-      title: "About Us",
+      title: "9th Floor Amenities",
       image: "/footer1.jpg", 
       link: "https://yourwebsite.com/about",
     },
     {
-      title: "Projects",
+      title: "Podium",
       image: "/footer2.jpg",
       link: "https://yourwebsite.com/projects",
     },
     {
-      title: "Contact",
+      title: "Terrace",
       image: "/footer3.jpg",
       link: "https://yourwebsite.com/contact",
     },
