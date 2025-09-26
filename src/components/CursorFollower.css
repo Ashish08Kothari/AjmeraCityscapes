@@ -1,0 +1,20 @@
+.cursor-follower {
+  position: fixed;
+  width: 40px;        /* size of the follower */
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(255, 215, 0, 0.5); /* golden translucent */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7),
+              0 0 25px rgba(255, 215, 0, 0.5);
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+  z-index: 9999;
+}
+
+/* Optional hover effect on buttons */
+button:hover ~ .cursor-follower {
+  transform: translate(-50%, -50%) scale(1.5);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1),
+              0 0 35px rgba(255, 215, 0, 0.8);
+}
